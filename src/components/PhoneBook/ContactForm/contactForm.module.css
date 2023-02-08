@@ -1,0 +1,6 @@
+.formGroup {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
