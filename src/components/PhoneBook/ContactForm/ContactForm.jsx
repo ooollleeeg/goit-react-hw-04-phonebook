@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import initialState from './initialState';
 
-import styles from './contactForm.module.css';
+import styles from './contactForm.module.scss';
 
 const ContactForm = ({ onSubmit }) => {
   const [state, setState] = useState({ ...initialState });
@@ -46,7 +46,9 @@ const ContactForm = ({ onSubmit }) => {
           required
         />
       </div>
-      <button type="submit">Add contact</button>
+      <button className={styles.btn} type="submit">
+        Add contact
+      </button>
     </form>
   );
 };

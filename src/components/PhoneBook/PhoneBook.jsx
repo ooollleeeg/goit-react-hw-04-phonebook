@@ -5,7 +5,7 @@ import ContactsList from './ContactsList/ContactsList';
 import ContactFilter from './ContactFilter/ContactFilter';
 import ContactForm from './ContactForm/ContactForm';
 
-import styles from './phoneBooks.module.css';
+import styles from './phoneBooks.module.scss';
 
 const PhoneBook = () => {
   const [contacts, setContacts] = useState(() => {
@@ -68,10 +68,10 @@ const PhoneBook = () => {
 
   return (
     <div>
-      <h1>PhoneBook</h1>
+      <h1 className={styles.title}>PhoneBook</h1>
       <div className={styles.wrapper}>
         <div className={styles.block}>
-          <h3>Add contact</h3>
+          <h3 className={styles.blockTitle}>Add contact</h3>
           <ContactForm onSubmit={addContact} />
         </div>
         <div className={styles.block}>
